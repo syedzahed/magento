@@ -1,0 +1,19 @@
+<nav class="navbar navbar-light bg-light navbar-expand-md navbar-expand-lg" style="border-bottom: 1px solid #9a9a9a;">
+        <div class="container-fluid"> 
+        <?php echo $this->getChildHtml("logo"); ?>
+          <!-- <a class="navbar-brand" href="#"><img src="images/logo.png" width="130" alt=""/></a> -->
+          <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#custResNav" aria-controls="custResNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button> -->
+          <div class="collapse navbar-collapse" id="custResNav">
+            <ul class="navbar-nav ml-auto" id="header_lists">
+                <li>
+                <?php echo $this->getChildHtml("topSearch"); ?>
+                </li>
+              <li class="nav-item">
+                <?php echo $this->getChildHtml('minicart'); ?>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>

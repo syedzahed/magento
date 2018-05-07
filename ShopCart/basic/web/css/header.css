@@ -1,0 +1,18 @@
+ul#header_lists {
+    display: flex;
+    justify-content: flex-end;
+}
+ul#header_lists > li {
+    margin: 17px 10px 10px 10px;
+}
+
+ul#header_lists > li > a {
+    color:rgba(0,0,0,0.8); 
+    font-weight:bold;
+}
+.product-info-main .page-title-wrapper h1{
+    color: #dfa236 !important;
+    text-transform: uppercase !important;
+    font-weight: bolder !important;
+    font-size: 28px !important;
+}

@@ -1,0 +1,28 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+    <!-- <move element="top.links" before="custom_header"> -->
+      <!--To add custom logo-->
+        <referenceBlock name="logo">
+            <arguments>
+                <argument name="logo_file" xsi:type="string">images/logo.png</argument>
+                <argument name="logo_img_width" xsi:type="number">180</argument>
+            </arguments>
+        </referenceBlock>
+        <move element="category.description" destination="content.bottom" />
+        <move element="product.info.description" destination="product.info.main" before="product.info"/>
+         <move element="product.info.description" destination="product.info.options.wrapper" after="-"/>
+        <!-- <referenceContainer name="header.container">
+            <block class="Magento\Framework\View\Element\Template" name="custom_header" as="custom_header" template="Magento_Theme::customheader.phtml"  before="-"/>
+        </referenceContainer>
+        
+        
+        <move element="minicart" destination="custom_header"/>
+        <move element="top.search" destination="custom_header"/>
+        <move element="logo" as="logo" destination="custom_header"/> -->
+        <move element="product.info.overview" destination="page.main.title" />
+        <referenceBlock name="product.info.sku" remove="true" />
+        <referenceBlock name="view.addto.compare" remove="true" />
+        <referenceBlock name="view.addto.wishlist" remove="true" />
+         <referenceBlock name="product.info.mailto" remove="true" />
+    </body>
+</page>

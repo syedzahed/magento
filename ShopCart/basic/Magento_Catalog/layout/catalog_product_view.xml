@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page layout="1column" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <!-- <container after="content">
+            <block class="Magento\Framework\View\Element\Template" name="customproductinfo" template="Magento_Catalog::customproductinfo.phtml"></block>
+        </container> -->
+        <!-- <referenceBlock name="head.additional">
+            <block class="Magento\Framework\View\Element\Template" name="frontuser" template="Magento_Catalog::tags.phtml"/>
+        </referenceBlock> -->
+        <referenceContainer name="content">
+            <block class="Magento\Catalog\Block\Product\View\Description" name="customproductinfo" template="Magento_Catalog::customproductinfo.phtml"></block>
+        </referenceContainer>
+
+        <!-- <block class="Magento\Catalog\Block\Product\View\Description" name="product.info.ingrediants" template="Magento_Catalog::ingrediants.phtml" after="product.info.media">
+
+        </block> -->
+
+
+        <referenceBlock name="product.info.details" remove="true">
+
+        </referenceBlock>
+
+        <!-- <block class="Magento\Catalog\Block\Product\View\Description" name="product.info.description" template="Magento_Catalog::product/view/attribute.phtml" group="detailed_info">
+            <arguments>
+                <argument name="at_call" xsi:type="string">getDescription</argument>
+                <argument name="at_code" xsi:type="string">description</argument>
+                <argument name="css_class" xsi:type="string">description</argument>
+                <argument name="at_label" xsi:type="string">none</argument>
+                <argument name="title" translate="true" xsi:type="string">Details</argument>
+            </arguments>
+        </block> -->
+    </body>
+    <!-- <body>
+        <move element="page.main.title" destination="product.info.main" before="-"/>
+        <move element="product.info.stock.sku" destination="product.info.price" after="product.price.final"/>
+        <move element="product.info.review" destination="product.info.main" before="product.info.price"/>
+    </body> -->
+</page>
+<!-- <page layout="2column" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="logo">
+                <arguments>
+                    <argument name="logo_file" xsi:type="string">images/logo.png</argument>
+                </arguments>
+        </referenceBlock>
+        
+    </body>
+</page> -->

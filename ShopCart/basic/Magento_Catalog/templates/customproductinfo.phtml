@@ -1,0 +1,35 @@
+<div style="clear: both;"></div>
+<div class="mdl-grid"> 
+    <div style="background: #e0e4ed;width: 40%;  padding: 5%">
+        <h3><?php
+            $_product = $block->getProduct();
+            //$myattribute = $_product->getResource()->getAttribute('Ingredients')->getFrontend()->getValue($_product);
+            // $attributes = $_product->getAttributeText('Ingredients');
+            echo $_product->getResource()->getAttribute("ingredients")->getFrontendLabel();
+        ?>
+        </h3>
+        <?php
+            $_product = $block->getProduct();
+            //$myattribute = $_product->getResource()->getAttribute('Ingredients')->getFrontend()->getValue($_product);
+            // $attributes = $_product->getAttributeText('Ingredients');
+            // echo $_product->getResource()->getAttribute("ingredients")->getFrontendLabel();
+            echo $_product->getResource()->getAttribute("ingredients")->getFrontend()->getValue($_product);
+            //var_dump($attributes);
+            // foreach ($attributes as $attribute) {
+            //     echo "hhhh";
+            // }
+            
+            //echo __($_product->getAttribute('Ingredients')->getFrontend()->getValue());
+        // echo "HEELLO";
+
+        ?>
+    </div>
+    <div style="width: 40%;  padding: 5%">
+        <?php echo $_product->getDescription() ?>
+    </div>
+</div>
+<div class="mdl-grid" style="background: #4dc0cc">
+    <div style="min-height: 240px;">
+                adsadasdsad
+    </div>
+</div>
