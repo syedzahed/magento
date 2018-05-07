@@ -14,5 +14,6 @@
         <referenceBlock name="view.addto.wishlist" remove="true" />
         <referenceBlock name="catalog.compare.link" remove="true"/>
         <referenceBlock name="product.info.review" remove="true" />
+         <referenceBlock name="top.search" remove="true" />
     </body>
 </page>
